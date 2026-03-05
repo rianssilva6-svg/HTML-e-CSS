@@ -3,9 +3,9 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
- }
+}
 
- body {
+body {
     
     background-color: rgb(167, 119, 57);
     background-image:url("assents/fundo\ branco.jpg") ;
@@ -38,9 +38,9 @@ a {
 }
 
 img {
-      display: block;
-      max-width: 450px;
-      margin: 50px auto;
+    display: block;
+    max-width: 450px;
+    margin: 50px auto;
 }
 
 button {
