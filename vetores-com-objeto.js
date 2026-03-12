@@ -1,5 +1,10 @@
 // Vetor de nomes
-const listaDeNomes = ["Ana", "Maria","Joana"]
+const listaDeNomes = [
+    {nome:"Ana"},
+    {nome:"Maria"},
+    {nome:"Joana"}
+
+]
 
 // Exemplo com vetor de numeros
 const listaDeNumeros = [1,2,3,4,5]
@@ -45,6 +50,6 @@ console.log(pares)
 
 
 console.log("\nNa lista de nomes, mostre todos os nomes com forEach")
-listaDeUsuarios.forEach(u => (
+listaDeNomes.forEach(u => (
     console.log(`Nome: ${u.nome}`)
 ))
