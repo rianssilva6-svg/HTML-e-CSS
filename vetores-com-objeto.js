@@ -3,7 +3,6 @@ const listaDeNomes = [
     {nome:"Ana"},
     {nome:"Maria"},
     {nome:"Joana"}
-
 ]
 
 // Exemplo com vetor de numeros
@@ -53,3 +52,19 @@ console.log("\nNa lista de nomes, mostre todos os nomes com forEach")
 listaDeNomes.forEach(u => (
     console.log(`Nome: ${u.nome}`)
 ))
+console.log("\nNa lista de usuarios, mostre todos os nomes com forEach")
+const nomes = listaDeUsuarios.map(u=>u.nome)
+nomes.forEach(nome=>console.log(`Nome: ${nome}`))
+
+console.log("\nNa lista de usuario, encontre um usuario")
+const usuarioEncontrado = listaDeUsuarios.find(u=>u.nome === "Ana")
+console.log(usuarioEncontrado)
+console.log(`Nome: ${usuarioEncontrado.nome} \nIdade: ${usuarioEncontrado.idade}`)
+
+console.log("\nNa lista de usuarios, encontre um usuario com idade de 45 anos")
+const usuario45 = listaDeUsuarios.find(u=>u.idade === 45 )
+console.log(`Nome: ${usuario45.nome} \nIdade: ${usuario45.idade}`)
+
+console.log("\nNa lista de usuarios, somando todas as idades")
+const somaIdade = listaDeUsuarios.reduce((total, usuario) => total + usuario.idade, 0)
+console.log(somaIdade)
