@@ -24,5 +24,5 @@ function gerarTabuada() {
     }
 }
 
-const botaoGerar = document.getElementById("BtnGear");
+const botaoGerar = document.getElementById("BtnGerar");
 botaoGerar.addEventListener("click",gerarTabuada);
