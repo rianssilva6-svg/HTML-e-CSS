@@ -20,17 +20,18 @@ body {
 body img {
     width: 350px;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 /* Container */
 .container {
     background-color: #ffffff;
     padding: 40px;
-    border-radius: 12px;
+    border-radius: 20px;
     width: 400px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    border-top: 8px solid #ffdf00; /* amarelo bandeira */
+    border-top: 20px solid #ffdf00; /* amarelo bandeira */
 }
 
 /* Título */
