@@ -1,0 +1,101 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo com fundo */
+body {
+    background-image: url("assents/Design\ sem\ nome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagem como fundo */
+body img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    object-fit: cover; /* mantém proporção sem distorcer */
+    object-position: center; /* centraliza a imagem */
+    z-index: -1; /* fica atrás de tudo */
+}
+
+/* Camada escura para melhorar leitura */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4); /* escurece levemente */
+    z-index: -1;
+}
+
+/* Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+
+/* Título */
+.container h1 {
+    color: #9e1313;
+    margin-bottom: 20px;
+}
+
+/* Label */
+.container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Input */
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #949494;
+}
+
+/* Botão */
+#Valor {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#Valor:hover {
+    background-color: #1b5e20;
+}
+
+/* Resultado */
+#Valorgerado {
+    margin-top: 15px;
+    font-weight: bold;
+}
