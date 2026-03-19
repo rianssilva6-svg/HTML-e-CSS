@@ -8,7 +8,6 @@ function calculo () {
     const resultadoDiv = document.getElementById("Resultadomedia");
     resultadoDiv.innerHTML = ""
 
-
     resultado_soma = nota1 + nota2 + nota3
     resultado_media = resultado_soma / 3
 
