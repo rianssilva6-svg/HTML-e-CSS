@@ -25,7 +25,7 @@ if (media >= 7) {
     resultadoDiv.innerHTML += `<strong>Aluno Aprovado</strong><br>`
 }
 
-else if (media <= 6.9 && media == 5) {
+else if (media <= 6.9 && media >= 5) {
     resultadoDiv.innerHTML += `<strong>Aluno em recuperação</strong><br>`
 }
 

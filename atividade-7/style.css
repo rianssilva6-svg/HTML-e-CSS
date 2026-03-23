@@ -9,6 +9,7 @@
 /* ===== BODY ===== */
 body {
     background-image: url("assents/Design\ sem\ nome\ 3.svg");
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -98,7 +99,8 @@ button:active {
     background: #f4f7fb;
     border-left: 4px solid #0056A4;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
+    line-height: 1.5; /* espaço entre linhas */
 }
 
 /* ===== RESPONSIVO ===== */
