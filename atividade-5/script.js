@@ -25,8 +25,6 @@ function quant() {
     total = quantidade * preco;
 
     // Exibir resultado com 2 casas decimais
-    resultadoDiv.innerHTML += `<strong>Valor: ${preco.toFixed(2)}</strong>`;
-
     resultadoDiv.innerHTML += `<strong>Valor da compra: R$ ${total.toFixed(2)}</strong>`;
 }
 
