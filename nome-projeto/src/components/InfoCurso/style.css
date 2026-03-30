@@ -1,0 +1,52 @@
+/* style.css */
+
+/* Estilização do container principal */
+.Info-curso {
+    background-color: #ffffff;
+    border-left: 7px solid #005aa5; /* Azul padrão SENAI */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 25px;
+    transition: transform 0.2s ease;
+}
+
+.Info-curso:hover {
+    transform: translateY(-5px);
+}
+
+/* Título com o estilo institucional */
+.Info-curso h2 {
+    color: #005aa5;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* Estilização dos parágrafos de informação */
+.Info-curso p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    display: flex;
+    justify-content: b;
+}
+
+
+/* Adicionando um detalhe que remete ao setor industrial/tecnológico */
+.Info-curso::after {
+    content: "SENAI - Informação Profissional";
+    display: block;
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 20px;
+    text-align: right;
+    font-style: italic;
+}

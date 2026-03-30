@@ -1,0 +1,57 @@
+/* Importando a fonte impactante 'Oswald' */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+/* =========================================
+   FUNDO DA TELA E CENTRALIZAÇÃO
+========================================= */
+.container-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+    background-color: #050510; /* Fundo super escuro para o neon brilhar */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   ESTILOS DO CARD (TEMA GTA VI / VICE CITY)
+========================================= */
+.mensagem {
+    background: linear-gradient(135deg, #120424 0%, #0a1128 100%);
+    border: 2px solid #ff007f; /* Borda Rosa Neon */
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    margin: 25px auto;
+    max-width: 400px; /* Um pouco mais largo para acomodar o texto */
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    
+    /* Brilho inicial do card */
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4), inset 0 0 10px rgba(255, 0, 127, 0.1);
+    
+    /* Suaviza as animações */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    text-align: center; /* Centraliza o texto dentro do card */
+}
+
+/* Efeito quando o mouse passa no card inteiro */
+.mensagem:hover {
+    transform: translateY(-8px) scale(1.02); /* Flutua para cima e cresce levemente */
+    border-color: #00e5ff; /* Borda fica Ciano */
+    box-shadow: 0 15px 30px rgba(0, 229, 255, 0.5), 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+/* Estilo do Título (h1) */
+.mensagem h1 {
+    color: #ff007f; /* Rosa Neon */
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px;
+}

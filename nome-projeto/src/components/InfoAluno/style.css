@@ -1,0 +1,94 @@
+/* Importando uma fonte impactante para combinar com o tema */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+/* Se for aplicar direto na tela toda */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+    margin: 0;
+    
+    /* Fundo super escuro opcional para destacar ainda mais o neon */
+    background-color: #050510; 
+}
+
+/* OU se você tiver uma div em volta do card, como .container ou .App */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 100px;
+}
+
+
+
+
+.info-aluno {
+    /* Fundo escuro com um leve gradiente roxo/azul */
+    background: linear-gradient(135deg, #120424 0%, #0a1128 100%);
+    border: 2px solid #ff007f; /* Borda Rosa Neon */
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 360px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    
+    /* Brilho inicial do card */
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4), inset 0 0 10px rgba(255, 0, 127, 0.1);
+    
+    /* Suaviza as animações */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+/* EFEITO HOVER NO CARD INTEIRO */
+.info-aluno:hover {
+    /* Faz o card "flutuar" para cima e crescer um pouquinho */
+    transform: translateY(-8px) scale(1.02);
+    
+    /* Muda a borda para Ciano e aumenta o brilho */
+    border-color: #00e5ff;
+    box-shadow: 0 15px 30px rgba(0, 229, 255, 0.5), 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+.info-aluno h2 {
+    color: #ff007f; /* Rosa Neon */
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    
+    /* Sombra no texto para parecer letreiro de neon */
+    text-shadow: 2px 2px 0px #000, 0 0 10px #ff007f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+/* Muda a cor do título quando o card sofre hover */
+.info-aluno:hover h2 {
+    color: #00e5ff; /* Ciano Neon */
+    text-shadow: 2px 2px 0px #000, 0 0 12px #00e5ff;
+}
+
+.info-aluno p {
+    font-size: 18px;
+    margin: 12px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+}
+
+/* EFEITO HOVER INDIVIDUAL NAS LINHAS DE TEXTO */
+.info-aluno p:hover {
+    /* Empurra o texto levemente para a direita */
+    transform: translateX(10px);
+    /* Cor de pôr do sol (Laranja/Amarelo) */
+    color: #ffaa00; 
+    text-shadow: 0 0 8px rgba(255, 170, 0, 0.6);
+}
