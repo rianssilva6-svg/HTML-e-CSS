@@ -1,0 +1,14 @@
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    color: #95a5a6;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer p {
+    margin: 0;
+}

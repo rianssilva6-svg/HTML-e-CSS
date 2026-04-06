@@ -1,0 +1,99 @@
+/* Main Container & Form */
+.container {
+    min-height: 80vh;
+    padding: 40px 20px;
+    background-color: #f4f7f6; /* Fundo levemente cinza */
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    border-top: 8px solid #27ae60;
+}
+
+.formulario h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1e8449;
+}
+
+/* Divisor */
+.divisor {
+    margin: 30px 0;
+    border: 0;
+    border-top: 2px dashed #ddd;
+}
+
+/* Lista de Times */
+.lista-times {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-times li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #2ecc71;
+}
+
+.time-nome {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.time-nacionalidade {
+    background: #e0e0e0;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #666;
+    text-transform: uppercase;
+}
