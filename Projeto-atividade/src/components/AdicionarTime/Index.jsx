@@ -18,7 +18,7 @@ export default function AdicionarTime() {
 
     return (
         <div className='formulario'>
-            <h2>Adicionar Usuario</h2>
+            <h2>Adicionar Time</h2>
             <form onSubmit={handlerAdicionarTime}>
                 <input 
                     type="text"
@@ -29,7 +29,7 @@ export default function AdicionarTime() {
                 
                 <input 
                     type="text"
-                    placeholder='Email'
+                    placeholder='Nacionalidade'
                     value={nacionalidade}
                     onChange={(e) => setNacionalidade(e.target.value)} 
  />
@@ -41,7 +41,8 @@ export default function AdicionarTime() {
             <ul>
                 {listaDeTime.map((usuario, index) => (
                     <li key={index}>
-                        {usuario.nome} - {usuario.nacionalidade}
+                        Time: {usuario.nome} <br/> Nacionalidade: {usuario.nacionalidade}
+                        <br />
                     </li>
                 ))}
             </ul>

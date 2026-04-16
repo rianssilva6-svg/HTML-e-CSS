@@ -1,19 +1,11 @@
 /* Main Container & Form */
-.container {
-    min-height: 80vh;
-    padding: 40px 20px;
-    background-color: #f4f7f6; /* Fundo levemente cinza */
-    display: flex;
-    justify-content: center;
-}
-
 .formulario {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     width: 100%;
-    max-width: 500px;
+    max-width: 630px;
     border-top: 8px solid #27ae60;
 }
 
@@ -96,4 +88,10 @@ button:hover {
     font-size: 0.8rem;
     color: #666;
     text-transform: uppercase;
+}
+
+li {
+    color: #000000;
+    text-align: left;
+    font-weight: 500;
 }
