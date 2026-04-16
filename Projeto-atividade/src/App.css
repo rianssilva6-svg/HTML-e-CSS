@@ -5,7 +5,12 @@
   text-align: center;
 }
 
-
+.background {
+  background-image: url('./imagem.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
 .logo {
   height: 6em;
