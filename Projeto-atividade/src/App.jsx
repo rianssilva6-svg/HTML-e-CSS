@@ -12,8 +12,11 @@ function App() {
           <AdicionarTime/>
         </main>
         <Footer/>
+        <p>oi</p>
       </div>
     </>
+
+
   )
 }
 
