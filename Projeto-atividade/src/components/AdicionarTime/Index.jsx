@@ -46,7 +46,7 @@ export default function AdicionarTime() {
             </form>
             <hr />
 
-            <h2>Times adicionados</h2>
+            <h2>TIMES ADICIONADOS</h2>
             <ul>
                 {listaDeTime.map((usuario, index) => (
                     <li key={index}>
