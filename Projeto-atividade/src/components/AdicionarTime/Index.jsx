@@ -4,15 +4,17 @@ import './style.css'
 export default function AdicionarTime() {
     const [nome,setNome] = useState('')
     const [nacionalidade,setNacionalidade] = useState('')
+    const [serie, setSerie] = useState('')
     const [listaDeTime, setListaDeTime] = useState([])
     const handlerAdicionarTime = (event) => {
 
         event.preventDefault()
 
-        if (nome && nacionalidade) {
-            setListaDeTime ([...listaDeTime, {nome, nacionalidade}])
+        if (nome && nacionalidade && serie) {
+            setListaDeTime ([...listaDeTime, {nome, nacionalidade, serie}])
             setNome('')
             setNacionalidade('')
+            setSerie('')
         }
     }
 
@@ -32,7 +34,14 @@ export default function AdicionarTime() {
                     placeholder='Nacionalidade'
                     value={nacionalidade}
                     onChange={(e) => setNacionalidade(e.target.value)} 
- />
+                />
+                <input 
+                    type="text"
+                    placeholder='Série'
+                    value={serie}
+                    onChange={(e) => setSerie(e.target.value)}    
+                />
+ 
                 <button type='submit'>Adicionar</button>
             </form>
             <hr />
@@ -41,7 +50,7 @@ export default function AdicionarTime() {
             <ul>
                 {listaDeTime.map((usuario, index) => (
                     <li key={index}>
-                        Time: {usuario.nome} <br/> Nacionalidade: {usuario.nacionalidade}
+                        Time: {usuario.nome} <br/> Nacionalidade: {usuario.nacionalidade}  <br />Série: {usuario.serie}
                         <br />
                     </li>
                 ))}
