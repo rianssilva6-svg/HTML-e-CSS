@@ -1,12 +1,13 @@
 /* Main Container & Form */
 .formulario {
     background: rgb(255, 255, 255);
-    padding: 30px;
+    padding: 25px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     width: 100%;
-    max-width: 670px;
-    border-top: 8px solid #27ae60;
+    max-width: 550px;
+    border-top: 15px solid #27ae60;
+    margin-left: 90px;
 }
 
 .formulario h2 {
@@ -93,5 +94,5 @@ button:hover {
 li {
     color: #000000;
     text-align: left;
-    font-weight: 5000;
-}
+    font-family: fantasy;
+    font-size: 20px;}
